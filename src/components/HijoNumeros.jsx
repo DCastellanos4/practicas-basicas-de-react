@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 export default class HijoNumeros extends Component {
-
   sumaPadre = () => {
     this.props.suma(this.props.num);
   };

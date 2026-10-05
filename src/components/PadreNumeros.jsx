@@ -15,7 +15,6 @@ export default class PadreNumeros extends Component {
     for (let i = 0; i <= 2; i++) {
       console.log(i);
       var num = parseInt(Math.random() * 120) + 1;
-      //AÑADIMOS EL NUMERO A LA LISTA CON HTML
       list.push(num);
       this.setState({ list: this.state.list });
     }
@@ -41,6 +40,14 @@ export default class PadreNumeros extends Component {
             </li>
           );
         })}
+        {/* CONDICIONALES EN EL RENDER*/}
+        {this.variable == 0 ? (
+          <h1>La variables es 0</h1>
+        ) : this.variable >= 0 ? (
+          <h1>La variable es mayor a 0</h1>
+        ) : (
+          <h1>La variable es negativa</h1>
+        )}
         <button onClick={this.meteNum}>Añade nums</button>
       </div>
     );
