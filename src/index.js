@@ -2,12 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Contador from "./components/Contador.jsx";
+import Contador from "./components/Contador";
+import DibujosComplejosArray from "./components/DibujoComplejosArray";
+import DibujaNombres from "./components/DibujaNombres";
+import PadreDeporte from "./components/PadreDeporte";
+import PadreNumeros from "./components/PadreNumeros";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Contador />
+    {/* <Contador cont="15" /> */}
+    {/* <Contador cont="5" /> */}
+    {/* <DibujosComplejosArray/> */}
+    {/* <DibujaNombres /> */}
+    {/* <PadreDeporte /> */}
+    <PadreNumeros />
   </React.StrictMode>,
 );
 
